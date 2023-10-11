@@ -1,1 +1,1 @@
-web: gunicorn.TotalPlay.wsgi
+web: gunicorn TotalPlay.wsgi
