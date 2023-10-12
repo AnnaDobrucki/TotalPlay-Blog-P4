@@ -140,3 +140,7 @@ body {
     background: transparent;
     border: none;
 }
+
+.score-rating {
+    color: red;
+}
