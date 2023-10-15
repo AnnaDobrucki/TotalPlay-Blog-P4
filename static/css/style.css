@@ -9,9 +9,12 @@ body {
     color: #008E9B;
 }
 
+.nav-item-gothic {
+    font-family: Carrois Gothic SC, sans-serif;
+}
 
 .red-o {
-    color: #E84610;
+    color: EB7425
 }
 
 .thin {
@@ -23,7 +26,7 @@ body {
 }
 
 .dark-bg {
-    background-color: #445261;
+    background-color: #2F4858;
 }
 
 .main-bg {
@@ -63,7 +66,7 @@ body {
 }
 
 .masthead-text {
-    background-color: #445261;
+    background-color: #2F4858;
     color: white;
     position: relative;
 }
@@ -80,16 +83,16 @@ body {
     right: 90%;
     height: 100%;
     width: 150%;
-    background: #445261;
-    -webkit-transform: skew(15deg);
-    -moz-transform: skew(15deg);
-    transform: skew(15deg);
+    background: #2F4858;
+    -webkit-transform: skew(17deg);
+    -moz-transform: skew(17deg);
+    transform: skew(17eg);
     z-index: 100;
 }
 
 .post-link {
     text-decoration: none;
-    color: #445261;
+    color: #2F4858;
 }
 
 .post-link:hover,
@@ -125,7 +128,7 @@ body {
 
 .link:hover,
 .link:active {
-    color: #445261;
+    color: #2F4858;
     text-decoration: underline;
 }
 
@@ -150,3 +153,10 @@ body {
     margin-left: 5%;
     color: #008E9B;
 }
+
+.sign-in {
+    font-family: Carrois Gothic SC, sans-serif;
+    color:#EB7425;
+    font-weight: bold;
+}
+
