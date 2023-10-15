@@ -142,7 +142,11 @@ body {
     border: none;
 }
 
+.score-colour {
+    color: #008E9B;
+}
+
 .score-rating {
     margin-left: 5%;
-    color: white;
+    color: #008E9B;
 }
