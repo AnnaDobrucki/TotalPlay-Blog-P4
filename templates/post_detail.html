@@ -1,4 +1,5 @@
 {% extends 'base.html' %} {% block content %}
+{% load crispy_forms_tags %}
 
 <div class="masthead">
     <div class="container">
@@ -57,10 +58,23 @@
                 </p>
                 <div class="row">
                     <div class="col-1">
+                        <strong>
+                            {% if user.is_authenticated %}
+                            <form class="d-inline" action="{% url 'post_like' post.slug %}" method="POST">
+                                {% csrf_token %}
+                                {% if liked %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="fas fa-heart"></i></button>
+                                {% else %}
+                                <button type="submit" name="blogpost_id" value="{{post.slug}}" class="btn-like"><i class="far fa-heart"></i></button>
+                                {% endif %}
+                            </form>
+                            {% else %}
+                            <span class="text-secondary"><i class="far fa-heart"></i></span>
+                            {% endif %}
                         <!-- The number of likes goes before the closing strong tag -->
-                        <strong class="text-secondary"><i class="far fa-heart"></i> {{ post.number_of_likes }} </strong>
+                        <span class="text-secondary">{{ post.number_of_likes }} </span>
+                        </strong>
                     </div>
-                    <div class="col-1">
                         {% with comments.count as total_comments %}
                         <strong class="text-secondary"><i class="far fa-comments"></i>
                             <!-- Our total_comments variable goes before the closing strong tag -->
@@ -100,10 +114,28 @@
         </div>
         <div class="col-md-4 card mb-4  mt-3 ">
             <div class="card-body">
-                <!-- For later -->
-            </div>
-        </div>
-    </div>
-</div>
+               <!-- For later -->
+               {% if commented %}
+               <div class="alert alert-success" role="alert">
+                   Your comment needs to be checked out first, keepin out the trolls!
+               </div>
+               {% else %}
 
+               {% if user.is_authenticated %}
+
+               <h3>Leave a comment:</h3>
+               <p>Posting as: {{ user.username }}</p>
+               <form method="post" style="margin-top: 1.3em;">
+                   {{ comment_form | crispy }}
+                   {% csrf_token %}
+                   <button type="submit" class="btn btn-signup btn-outline-dark rounded-0 mt-2">Submit</button>
+               </form>
+               {% else %}
+               <p>Please <a class="link" href="{% url 'account_login' %}">Login</a> or <a class="link" href="{% url 'account_signup' %}">Signup</a> to leave a comment.</p>
+               {% endif %}
+               {% endif %}
+           </div>
+       </div>
+   </div>
+</div>
 {% endblock content %}
