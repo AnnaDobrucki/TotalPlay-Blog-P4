@@ -75,3 +75,12 @@ class PostLike(View):
             post.likes.add(request.user)
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
+
+class BookingView(FormView):
+   
+    template_name = 'bookings.html'
+    form_class = OnlineForm
+    success_url = '/home/'
+
+    def booking_view(self, request):
+        return render(request, 'bookings.html')

@@ -160,3 +160,23 @@ body {
     font-weight: bold;
 }
 
+.book_a_session {
+    background-image: url('https://res.cloudinary.com/dx6qelup5/image/upload/v1698154861/Screenshot_2023-10-24_at_14.40.21_ce0kdk.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.booking_container {
+    width: 800px;
+    height: auto;
+    padding-left: 137px;
+    border-style: solid;
+    border-color: #ffffff;
+    color: #ffffff;
+    background-color: #E84610;;
+    border-width: 1px;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
