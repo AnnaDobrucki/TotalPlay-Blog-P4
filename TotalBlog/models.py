@@ -25,6 +25,7 @@ OCCASION_CHOICE = (
     ('D&D', 'D&D'),
     ('Pathfinder', 'Pathfinder'),
     ('Thirsty Sword Lesbians', 'Thirsty Sword Lesbians'),
+    ('Help me choose something!?', 'Help me choose something!?'),
     ('None', 'None'),
 )
 

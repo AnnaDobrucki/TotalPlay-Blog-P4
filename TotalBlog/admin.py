@@ -28,4 +28,4 @@ class CommentAdmin(admin.ModelAdmin):
 @admin.register(Booking)
 class BookingAdmin(admin.ModelAdmin):
     model = Booking
-    list_display = ('name', 'email_address', 'date', 'time')
+    list_display = ('name', 'email_address', 'date', 'time', 'occasion')
