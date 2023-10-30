@@ -6,6 +6,28 @@ from cloudinary.models import CloudinaryField
 
 STATUS = ((0, "Draft"), (1, "Published"))
 
+TIME_CHOICE = (
+    ('16:00', '16:00'),
+    ('16:30', '16:30'),
+    ('17:00', '17:00'),
+    ('17:30', '17:30'),
+    ('18:00', '18:00'),
+    ('18:30', '18:30'),
+    ('19:00', '19:00'),
+    ('19:30', '19:30'),
+    ('20:00', '20:00'),
+    ('20:30', '20:30'),
+    ('21:00', '21:00'),
+
+)
+
+OCCASION_CHOICE = (
+    ('D&D', 'D&D'),
+    ('Pathfinder', 'Pathfinder'),
+    ('Thirsty Sword Lesbians', 'Thirsty Sword Lesbians'),
+    ('None', 'None'),
+)
+
 
 class Post(models.Model):
     title = models.CharField(max_length=200, unique=True)
@@ -51,3 +73,23 @@ class Comment(models.Model):
 
     def __str__(self):
         return f"Comment {self.body} by {self.name}"
+
+
+class Booking(models.Model):
+
+    user = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="user_bookings"
+        )
+    name = models.CharField(max_length=60, null=True, blank=True)
+    email_address = models.EmailField(null=True, blank=True)
+    phone = models.CharField(max_length=20, null=False, blank=False, default='')
+    date = models.DateField()
+    time = models.CharField(
+        max_length=50, choices=TIME_CHOICE, blank=False
+        )
+    occasion = models.CharField(
+        max_length=100, choices=OCCASION_CHOICE, blank=False
+        )
+    
+    def __str__(self):
+        return self.name

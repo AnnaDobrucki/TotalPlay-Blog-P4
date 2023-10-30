@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, reverse
 from django.views import generic, View
 from django.http import HttpResponseRedirect
-from .models import Post
-from .forms import CommentForm
+from django.views.generic.edit import FormView
+from .models import *
+from .forms import *
 
 
 class PostList(generic.ListView):
@@ -10,6 +11,7 @@ class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 12
+   
 
 class PostDetail(View):
 
@@ -76,11 +78,28 @@ class PostLike(View):
 
         return HttpResponseRedirect(reverse('post_detail', args=[slug]))
 
+
 class BookingView(FormView):
-   
+  
     template_name = 'bookings.html'
     form_class = OnlineForm
-    success_url = '/home/'
 
     def booking_view(self, request):
         return render(request, 'bookings.html')
+    
+    def post(self, request):
+       
+        form = OnlineForm(data=request.POST)
+        if form.is_valid():
+            booking = form.save(commit=False)
+            booking.user = request.user
+            booking.save()
+            return render(request, 'index.html')
+        else:
+            messages.error(request, 'Seems like you need to fill out all the required fields')
+
+        return render(request, 'bookings.html', {
+                'form': form
+                }
+                )
+
