@@ -1,7 +1,8 @@
-from django.shortcuts import render, get_object_or_404, reverse
+from django.shortcuts import render, get_object_or_404, reverse, redirect
 from django.views import generic, View
 from django.http import HttpResponseRedirect
 from django.views.generic.edit import FormView
+from django.contrib import messages
 from .models import *
 from .forms import *
 
@@ -94,7 +95,7 @@ class BookingView(FormView):
             booking = form.save(commit=False)
             booking.user = request.user
             booking.save()
-            return render(request, 'index.html')
+            return redirect(reverse('completed'))
         else:
             messages.error(request, 'Seems like you need to fill out all the required fields')
 
@@ -103,3 +104,13 @@ class BookingView(FormView):
                 }
                 )
 
+
+class ListBookingView(generic.DetailView):
+
+    def get(self, request, *args, **kwargs):
+        
+        bookings = Booking.objects.filter(user__id=request.user.id)
+        return render(request, 'completed.html', {
+            'bookings': bookings
+            }
+        )

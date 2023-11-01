@@ -1,0 +1,28 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<section id="hero-outer">
+    <div id="outer-box">
+        <h3>Thanks for booking your session with us!</h3>
+        <h2> You have booked:</h2>
+        {% for booking in bookings %}
+        <div class="col-md-5">
+            <div class="card mb-5">
+                <div class="card-body">
+                    <h5 class='card-title text-uppercase text-center'>{{ booking.name }}</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">{{ booking.date }} at
+                        {{ booking.time }}</h6>
+                    <div class='card-text'>
+                        <p>About TTRPG: {{booking.occasion}}</p>
+                    </div>
+            </div>
+        </div>
+        {%endfor%}
+
+    </div>
+
+</section>
+
+
+{%endblock%}
