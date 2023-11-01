@@ -174,9 +174,20 @@ body {
     border-style: solid;
     border-color: #ffffff;
     color: #ffffff;
-    background-color: #E84610;;
+    background-color: #EB7425;
     border-width: 1px;
     margin: auto;
     padding-bottom: 10px;
+}
+
+
+#banner-box {
+    color: #FFFFFF;
+    text-align: center;
+    height: auto;
+    background-color: #EB7425;
+    bottom: 325px;
+    right: 400px;
+    position: sticky;
 }
 

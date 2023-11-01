@@ -114,3 +114,39 @@ class ListBookingView(generic.DetailView):
             'bookings': bookings
             }
         )
+
+def edit_booking_view(request, booking_id):
+
+    if request.user.is_authenticated:
+        booking = get_object_or_404(Booking, id=booking_id)
+        if booking.user == request.user:
+            if request.method == 'POST':
+                form = OnlineForm(data=request.POST, instance=booking)
+                if form.is_valid():
+                    form.save()
+                    # Pops up a message to the user when a booking is edited
+                    messages.success(request, 'Your booking has been updated')
+                    return redirect('/')
+        else:
+            messages.error(request, 'You do not have the authority to access this page!')
+            return redirect('/')
+
+    form = OnlineForm(instance=booking)
+
+    return render(request, 'edit_bookings.html', {
+        'form': form
+        })
+
+
+def delete_booking(request, booking_id):
+
+    if request.user.is_authenticated:
+        booking = get_object_or_404(Booking, id=booking_id)
+        if booking.user == request.user:
+            booking.delete()
+            # Pops up a message to the user when a bookings is cancelled
+            messages.success(request, 'Your booking has been cancelled')
+            return redirect('/')
+        else:
+            messages.error(request, 'You do not have the authority to access this page!')
+            return redirect('/')

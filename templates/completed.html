@@ -2,12 +2,12 @@
 
 {% block content %}
 
-<section id="hero-outer">
-    <div id="outer-box">
+<section>
+    <div id="banner-box">
         <h3>Thanks for booking your session with us!</h3>
         <h2> You have booked:</h2>
         {% for booking in bookings %}
-        <div class="col-md-5">
+        <div class="pagination justify-content-center">
             <div class="card mb-5">
                 <div class="card-body">
                     <h5 class='card-title text-uppercase text-center'>{{ booking.name }}</h5>
@@ -16,6 +16,8 @@
                     <div class='card-text'>
                         <p>About TTRPG: {{booking.occasion}}</p>
                     </div>
+                    <a href="/edit_bookings/{{booking.id}}" class="btn btn-success">Edit Booking</a>
+                    <a href="/delete_booking/{{booking.id}}" class="btn btn-success">Cancel</a>
             </div>
         </div>
         {%endfor%}
