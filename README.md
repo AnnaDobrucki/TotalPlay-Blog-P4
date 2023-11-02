@@ -4,14 +4,13 @@ Total Play is my own personal love letter(s) for TTRPG's (Table top role playing
 
 This blog intertwines reading about whats out there but also allows people to book 1:1 sessions with myself, to chat about any TTRPG's.
 
-
 ## CONTENTS
 
 * [Introduction](#TotalPLay)
 
 * [Sections and Pages](#sections-and-pages)
     *  [Header](#header-and-navbar)
-    *  [Register Page](#register-page)
+    *  [Sign Up](#Sign-up)
     *  [Login Page](#login-page)
     *  [Book 1:1 Section](#book-1:1-section)
     *  [Made Bookings Section](#made-booking)
@@ -23,8 +22,8 @@ This blog intertwines reading about whats out there but also allows people to bo
 * [Design](#design)
     *  [Colour Palette](#colour-palette)
     *  [Typography](#typography)
-    *  [Imagery](#imagery)
     *  [Wireframes](#wireframes)
+* [Future Ideas](#future-ideas)
 * [Technologies Used](#technologies-used)   
     *  [Languages Used](#languages-Used)
     *  [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
@@ -33,6 +32,43 @@ This blog intertwines reading about whats out there but also allows people to bo
 * [Deployment](#deployment)
 * [Credits](#credits)
 * [Acknowledgements](#acknowledgements)
+
+
+## Sections and Pages
+
+### Header 
+
+### Sign up
+
+### Login In
+
+### Book 1:1 Section
+
+### Made Bookings Section
+
+### Edit Booking
+
+### Footer
+
+### Admin
+
+## User Experience
+
+### User Stories
+
+## Desgin
+
+### Colour Palette
+
+### Typeography 
+
+### Wireframes
+
+## Future Ideas
+
+After building the app, there were a couple of ideas that in the future I would like to implement. 
+* I would like to add a feature that connects the bokings to a google/ facebook etc calenders.
+* Connect up a welcome email to people who have registered.
 
 ## Technologies used
 
@@ -58,3 +94,21 @@ This blog intertwines reading about whats out there but also allows people to bo
 ## Testing
 
   ### All notes related to testing are found [here](documentation/testing.md).
+
+## Bugs
+
+## Deployment
+
+* Go to the Heroku Dashboard. Create new apllication
+* In the 'Settings' tab of your app select 'Reveal Config Vars'.
+* Create/ Add 'SECRET_KEY' connecting to your django environment.
+* Create/ Add 'DATABASE_URL' connecting to your postgreSQL database.
+* Create/ Add 'ClOUDINARY_URL' connecting to cloudinary's cloud hosting service for media.
+* Link repository from GitHub to Heroku
+* Go to deploy page, select auto deployment
+* Deploy Main Branch
+
+## Credits
+
+## Acknowledgement
+
