@@ -161,14 +161,14 @@ body {
 }
 
 .book_a_session {
-    background-image: url('https://res.cloudinary.com/dx6qelup5/image/upload/v1698154861/Screenshot_2023-10-24_at_14.40.21_ce0kdk.png');
+    background-image: url('https://res.cloudinary.com/dx6qelup5/image/upload/v1698848376/wizard_magic_mvauzf.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 }
 
 .booking_container {
-    width: 800px;
+    width: 700px;
     height: auto;
     padding-left: 137px;
     border-style: solid;

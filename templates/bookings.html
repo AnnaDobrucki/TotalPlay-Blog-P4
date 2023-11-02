@@ -2,24 +2,11 @@
 
 {% block content %}
 
-{% if not user.is_authenticated %}
-<section id="login_required" class="book_a_session">
-    <div class="login_container">
-        <div class="row">
-            <div class="col-md-3 mt-5 offset-md-3">
-                <h3>Login Needed</h3>
-                <p>Please <a href="{% url 'account_login' %}">Login</a> to continue with your booking</p>
-            </div>
-        </div>
-    </div>
-</section>
-{% else %}
-{% if user.is_authenticated %}
-<section id="booking" class="book_a_session">
-    <div class="booking_container">
+<section class="book_a_session">
+    <div class="booking_container ">
         <div class="row">
             <div class="col-md-4 mt-2 offset-md-3">
-                <h4 class="stroke">Booking a 1:1 Chat about TTRPG's:</h4>
+                <h4 class="">Booking a 1:1 Chat about TTRPG's:</h4>
                 <p>Let's have a chat about what might suit you!? </p>
                 <form method="POST">
                     {% csrf_token %}
@@ -31,8 +18,5 @@
         </div>
     </div>
 </section>
-
-{% endif %}
-{% endif %}
 
 {%endblock%}
