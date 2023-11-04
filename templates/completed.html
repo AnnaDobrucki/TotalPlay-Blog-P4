@@ -1,6 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
+<!-- After submitted form is pushed, user is redirected to there current bookings -->
 
 <section>
     <div id="banner-box">
@@ -16,6 +17,8 @@
                     <div class='card-text'>
                         <p>About TTRPG: {{booking.occasion}}</p>
                     </div>
+<!-- Allowing users to edit/ delete sessions -->
+
                     <a href="/edit_bookings/{{booking.id}}" class="btn btn-success">Edit Booking</a>
                     <a href="/delete_booking/{{booking.id}}" class="btn btn-success">Cancel</a>
             </div>

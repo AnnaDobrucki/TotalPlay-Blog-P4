@@ -164,7 +164,33 @@ Behind the scenes in the admin page, our superusers can use this as a place to c
 
 ## **User Experience**
 
+### *Admin Users*
+
+- To allow super users the ability to have easy access to the admin side. Allowing for a responsive website that allows them to shape there website, blog and bookings as they see fit.
+
 ### *User Stories*
+
+Using the GitHub I used the agile methods and tools to allow myself to create and keep track of the User Stories I set out for myself in the beginning. 
+<details>
+
+<summary>User Stories Git Hub ></summary>
+
+![booking admin](/documentation/image_folders/UserStories_pics/user_stories.png)
+</details>
+
+1) As a Site user I can make an account to leave likes and comments on things I read.
+2) As a Site User I can comment on each post so I can share my opinions
+3) As a Site user I can make my own account to leave likes and comments
+4) As a Site User I can see all comments so I can read the conversation
+5) As a Site user I can unlike a previous posr so that share my feelings
+6) As a Site User I can click on a post to read the entire blog
+7) As a Site User I can view varying posts and select ones to read
+8) As a Site user I can book a 1:1 chat about Role Playing Games to learn more about this field
+9) As a Site User I can edit/delete and view my bookings so that I can resolve any issues and remind myself of future bookings.
+10) As a Site Admin I can see who has booked appointments to allow me to manage my diary and promotion
+11) As a Site Admin I can manage peoples bookings in case of emergencies or cancellations
+12) As a Site Admin I can create, read, update + delete posts so I can manage my blog
+
 
 ## **Desgin**
 
@@ -179,6 +205,7 @@ Behind the scenes in the admin page, our superusers can use this as a place to c
 After building the app, there were a couple of ideas that in the future I would like to implement. 
 * I would like to add a feature that connects the bokings to a google/ facebook etc calenders.
 * Connect up a welcome email to people who have registered.
+* Due to time constraints I left one user story unfufilled of allowing users to edut comments. This would be a feature I'd enjoy making in future. 
 
 ## Technologies used
 
