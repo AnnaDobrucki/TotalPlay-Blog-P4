@@ -11,11 +11,18 @@ class CommentForm(forms.ModelForm):
 
 
 class DateInput(forms.DateInput):
+    """
+    Inputs a widget on the form for date selection
+    """
     input_type = 'date'
 
 
 class OnlineForm(ModelForm):
-
+    """
+   Creates Placeholders/ widgets for relevant data input
+   sections, and links to view.py to give
+   the fields for booking
+   """
     name = forms.CharField(
         label='Booking Name',
         required=True,
@@ -36,11 +43,9 @@ class OnlineForm(ModelForm):
     )
 
     class Meta:
-        
+
         model = Booking
-        # All fields to be used
         fields = '__all__'
-        # Apart for the user field
         exclude = ('user', )
         widgets = {
             'date': DateInput()

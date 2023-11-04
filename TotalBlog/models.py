@@ -83,7 +83,8 @@ class Booking(models.Model):
         )
     name = models.CharField(max_length=60, null=True, blank=True)
     email_address = models.EmailField(null=True, blank=True)
-    phone = models.CharField(max_length=20, null=False, blank=False, default='')
+    phone = models.CharField(max_length=20,
+                             null=False, blank=False, default='')
     date = models.DateField()
     time = models.CharField(
         max_length=50, choices=TIME_CHOICE, blank=False
@@ -91,6 +92,6 @@ class Booking(models.Model):
     occasion = models.CharField(
         max_length=100, choices=OCCASION_CHOICE, blank=False
         )
-    
+
     def __str__(self):
         return self.name

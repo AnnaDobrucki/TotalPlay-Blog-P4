@@ -12,7 +12,7 @@ class PostList(generic.ListView):
     queryset = Post.objects.filter(status=1).order_by("-created_on")
     template_name = "index.html"
     paginate_by = 12
-   
+
 
 class PostDetail(View):
 
@@ -32,10 +32,10 @@ class PostDetail(View):
                 "comments": comments,
                 "commented": False,
                 "liked": liked,
-                "comment_form": CommentForm() 
+                "comment_form": CommentForm()
             },
         )
-    
+
     def post(self, request, slug, *args, **kwargs):
 
         queryset = Post.objects.filter(status=1)
@@ -69,7 +69,7 @@ class PostDetail(View):
 
 
 class PostLike(View):
-    
+
     def post(self, request, slug, *args, **kwargs):
         post = get_object_or_404(Post, slug=slug)
         if post.likes.filter(id=request.user.id).exists():
@@ -81,15 +81,15 @@ class PostLike(View):
 
 
 class BookingView(FormView):
-  
+
     template_name = 'bookings.html'
     form_class = OnlineForm
 
     def booking_view(self, request):
         return render(request, 'bookings.html')
-    
+
     def post(self, request):
-       
+
         form = OnlineForm(data=request.POST)
         if form.is_valid():
             booking = form.save(commit=False)
@@ -97,7 +97,8 @@ class BookingView(FormView):
             booking.save()
             return redirect(reverse('completed'))
         else:
-            messages.error(request, 'Seems like you need to fill out all the required fields')
+            messages.error(request, 'Seems like you need to fill'
+                                    'out all the required fields')
 
         return render(request, 'bookings.html', {
                 'form': form
@@ -108,12 +109,13 @@ class BookingView(FormView):
 class ListBookingView(generic.DetailView):
 
     def get(self, request, *args, **kwargs):
-        
+
         bookings = Booking.objects.filter(user__id=request.user.id)
         return render(request, 'completed.html', {
             'bookings': bookings
             }
         )
+
 
 def edit_booking_view(request, booking_id):
 
@@ -127,7 +129,8 @@ def edit_booking_view(request, booking_id):
                     messages.success(request, 'Booking has been updated')
                     return redirect('/')
         else:
-            messages.error(request, 'You do not have the authority to access this page!')
+            messages.error(request, 'You do not have the authority'
+                                    'to access this page!')
             return redirect('/')
 
     form = OnlineForm(instance=booking)
@@ -147,5 +150,6 @@ def delete_booking(request, booking_id):
             messages.success(request, 'Your booking has been cancelled')
             return redirect('/')
         else:
-            messages.error(request, 'You do not have the authority to access this page!')
+            messages.error(request, 'You cannot access this'
+                                    'page without a log in!')
             return redirect('/')
