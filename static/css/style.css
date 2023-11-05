@@ -165,12 +165,11 @@ body {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+    border: #23BBBB;
 }
 
 .booking_container {
-    width: 700px;
     height: auto;
-    padding-left: 137px;
     border-style: solid;
     border-color: #ffffff;
     color: #ffffff;
@@ -202,5 +201,6 @@ body {
     right: 400px;
     position: sticky;
 }
+
 
 
