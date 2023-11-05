@@ -24,6 +24,9 @@ Through-out this project there were various bugs and error's that I had help fix
 
 * I had a couple of issues trying to get the form to redirect after the info had been pushed to the database, one of the CI tutors helped me understand that I needed to import the keyword of redirect. 
 
+* Had trouble with trying to Validate the Registration Page, after multiple tries, I went to tutor help that informed me this was an AllAuth templates error issue that I wouldn't be able to fix, and to mention within the ReadMe. 
+
+* An error I was unsure of fixing was the low resolution picture on the home page. This came from the back-end admin site, allowing admins to build and post there own blogs. Should an Admin use a picture of lower resolution that is there perogative, however it did mean the performance lighthouse test wasn't in the 90's for this reason. This woukd be something I'd want to fix in future to not allow low res pictures to be uploaded on the site.
 
 ## Validation
 Below are all verifications of code validations. 
@@ -55,12 +58,7 @@ For HTML validation I was instricted by tutors to do the following:
 
 ### Register
 
-<details>
-
-<summary>Register ></summary>
-
-![booking admin](/documentation/image_folders/)
-</details>
+* Please see [Error and Debug Section](#error-resolution-and-debugging)
 
 ### Book 1:1 Session Page
 
@@ -204,6 +202,35 @@ For HTML validation I was instricted by tutors to do the following:
 |  Edit.html has previous data available  | Renders all previous data | Pass
 |  Updating Edit form  | Updates with new data user has made | Pass
 |  On 'click' deletes session  | User is redirected to home page and shown confirmation of deletion | Pass
+
+## Lighthouse Testing 
+
+### Home Page 
+
+[Home Page Lighthouse Pic](/documentation/image_folders/Lighthouse_test_pics/home_page_lighthouse.png)
+
+### Register Page 
+
+[Register Page Lighthouse Pic](/documentation/image_folders/Lighthouse_test_pics/register_lighthouse_pic.png)
+
+### Booking Page 1:1
+
+[Booking Page Lighthouse Pic](/documentation/image_folders/Lighthouse_test_pics/booking_page_lighthouse.png)
+
+### Made Bookings Page 
+
+[Made Bookings Page Lighthouse Pic](/documentation/image_folders/Lighthouse_test_pics/made_bookings_lighthouse.png)
+
+### Edit Booking Page 
+
+[Home Page Lighthouse Pic](/documentation/image_folders/Lighthouse_test_pics/edit_bookings_lighthouse.png)
+
+### Sign Out Page 
+
+[Sign out Lighthouse Pic](/documentation/image_folders/Lighthouse_test_pics/sign_out_lighthouse.png)
+
+
+
 
 
 

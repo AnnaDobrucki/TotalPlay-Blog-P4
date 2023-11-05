@@ -192,18 +192,22 @@ Using the GitHub I used the agile methods and tools to allow myself to create an
 11) As a Site Admin I can manage peoples bookings in case of emergencies or cancellations
 12) As a Site Admin I can create, read, update + delete posts so I can manage my blog
 
-
 ## **Desgin**
 
 ### *Colour Palette*
+Jumping off of the colour palette from CI, I decided that oranges work well with light blues. I used [My Colour Space](https://mycolor.space/?hex=%23EB7425&sub=1) to help find the best to match and compliment the scheme.
+
+![Color Palette](/documentation/image_folders/desgin.pics/colour_pics/colour_pallete.png)
 
 ### *Typeography*
+
+
 
 ### *Wireframes*
 As with all projects for CI, we start with a basic Wireframe to help us undestand User wants and better UX:
 
-![Wireframe Home Page](/documentation/image_folders/wireframes/Home.png)
-![Wireframe Booking Page](/documentation/image_folders/wireframes/BookingPage.png)
+![Wireframe Home Page](/documentation/image_folders/desgin.pics/wireframes/Home.png)
+![Wireframe Booking Page](/documentation/image_folders/desgin.pics/wireframes/BookingPage.png)
 
 
 [Back to top](#totalplay)
