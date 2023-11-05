@@ -20,6 +20,9 @@ Through-out this project there were various bugs and error's that I had help fix
 
 * After creating the new model for bookings, making the form and views. I was baffled why I kept getting an error not being able to find the bookings form. After remembering I had to migrate and update this (and remembering to wire up url's) transferes user to the booking form.
 
+* After trying to render my form, I found that using 'form.as.p' allowed the form to occur as a paragraph which helped to place it in the template.
+
+* I had a couple of issues trying to get the form to redirect after the info had been pushed to the database, one of the CI tutors helped me understand that I needed to import the keyword of redirect. 
 
 
 ## Validation

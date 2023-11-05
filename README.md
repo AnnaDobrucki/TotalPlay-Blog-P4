@@ -28,7 +28,6 @@ This blog intertwines reading about whats out there but also allows people to bo
     *  [Languages Used](#languages-Used)
     *  [Frameworks, Libraries and Programs Used](#frameworks-libraries-and-programs-used)
 * [Testing](#testing)
-* [Bugs](#bugs)
 * [Deployment](#deployment)
 * [Credits](#credits)
 
@@ -232,8 +231,6 @@ After building the app, there were a couple of ideas that in the future I would 
 
   ### All notes related to testing are found [here](documentation/testing.md).
 
-## Bugs
-
 ## Deployment
 
 * Go to the Heroku Dashboard. Create new apllication
@@ -247,4 +244,18 @@ After building the app, there were a couple of ideas that in the future I would 
 
 ## Credits
 
+Through-out this project I was inspired and helped by a number of sources, in order to make custom code:
 
+1) Creating the Form/ Booking Sign Up:
+    - Allowed me insight into how to render my formonce built [Geeks for Geeks](https://www.geeksforgeeks.org/form-as_p-render-django-forms-as-paragraph/)
+    - Understanding the Model Form build thanks to django documentation [Django](https://docs.djangoproject.com/en/4.2/topics/class-based-views/generic-editing/)
+    - Watching this clinic based walkthrough, whilst overwhleming, did allow me some insight into times and dates [Clinic Walkthrough Youtube](https://youtu.be/s5xbtuo9pR0)
+    - This article was informative about how to get widgets within my form [Let's Code More](https://www.letscodemore.com/blog/how-to-add-date-input-widget-in-django-forms/)
+
+2) After some tutor help and read the following article I was able to redirect my users to different templates [Real Python](https://realpython.com/django-redirects/)
+
+3) This article on validators helped me to create the scoring system that I added to the POST Model [Django](https://docs.djangoproject.com/en/4.2/ref/validators/)
+
+4) The base of the blog is thanks to the skeleton code of Code Institue's 'I think therefore I blog walkthrough'.
+
+* I'd also like to credit thanks to all the tutors that helped guide me through-out at Code Institue.

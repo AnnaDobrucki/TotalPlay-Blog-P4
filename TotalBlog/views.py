@@ -81,7 +81,12 @@ class PostLike(View):
 
 
 class BookingView(FormView):
-
+    """
+    Renders the Booking form in the browser,
+    refering to OnlineForm in the Form.py file.
+    After completion it redirects to the MadeBookings
+    template.
+    """
     template_name = 'bookings.html'
     form_class = OnlineForm
 
@@ -107,7 +112,10 @@ class BookingView(FormView):
 
 
 class ListBookingView(generic.DetailView):
-
+    """
+    Renders the amount of bookings a client has, shown in
+    Made Bookings page
+    """
     def get(self, request, *args, **kwargs):
 
         bookings = Booking.objects.filter(user__id=request.user.id)
@@ -118,7 +126,12 @@ class ListBookingView(generic.DetailView):
 
 
 def edit_booking_view(request, booking_id):
-
+    """
+    Renders prepopulated data into the edit.html file 
+    using booking_id to collect already inputed data. 
+    Once new data has been entered it POST's it back.
+    And redirects user back home.
+    """
     if request.user.is_authenticated:
         booking = get_object_or_404(Booking, id=booking_id)
         if booking.user == request.user:
@@ -126,6 +139,7 @@ def edit_booking_view(request, booking_id):
                 form = OnlineForm(data=request.POST, instance=booking)
                 if form.is_valid():
                     form.save()
+         # Pops up a message to the user when a bookings is updated
                     messages.success(request, 'Booking has been updated')
                     return redirect('/')
         else:
@@ -141,7 +155,10 @@ def edit_booking_view(request, booking_id):
 
 
 def delete_booking(request, booking_id):
-
+    """
+    Using it's booking ID a user can choose to delete a session,
+    this will redirect user to home page with confirmation afterwards.
+    """
     if request.user.is_authenticated:
         booking = get_object_or_404(Booking, id=booking_id)
         if booking.user == request.user:
