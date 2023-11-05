@@ -6,6 +6,8 @@ from django.contrib import messages
 from .models import *
 from .forms import *
 
+# based on walkthrough 'I think therefore I blog'
+
 
 class PostList(generic.ListView):
     model = Post
@@ -13,6 +15,8 @@ class PostList(generic.ListView):
     template_name = "index.html"
     paginate_by = 12
 
+
+# based on walkthrough 'I think therefore I blog'
 
 class PostDetail(View):
 
@@ -35,6 +39,8 @@ class PostDetail(View):
                 "comment_form": CommentForm()
             },
         )
+
+# based on walkthrough 'I think therefore I blog'
 
     def post(self, request, slug, *args, **kwargs):
 
@@ -66,6 +72,8 @@ class PostDetail(View):
                 "liked": liked
             },
         )
+
+# based on walkthrough 'I think therefore I blog'
 
 
 class PostLike(View):
@@ -127,8 +135,8 @@ class ListBookingView(generic.DetailView):
 
 def edit_booking_view(request, booking_id):
     """
-    Renders prepopulated data into the edit.html file 
-    using booking_id to collect already inputed data. 
+    Renders prepopulated data into the edit.html file
+    using booking_id to collect already inputed data.
     Once new data has been entered it POST's it back.
     And redirects user back home.
     """
@@ -139,7 +147,7 @@ def edit_booking_view(request, booking_id):
                 form = OnlineForm(data=request.POST, instance=booking)
                 if form.is_valid():
                     form.save()
-         # Pops up a message to the user when a bookings is updated
+    # Pops up a message to the user when a bookings is updated
                     messages.success(request, 'Booking has been updated')
                     return redirect('/')
         else:

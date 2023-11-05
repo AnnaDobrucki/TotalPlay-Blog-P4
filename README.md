@@ -6,7 +6,7 @@ This blog intertwines reading about whats out there but also allows people to bo
 
 ## CONTENTS
 
-* [Introduction](#TotalPLay)
+* [Introduction](#TotalPlay)
 
 * [Sections and Pages](#sections-and-pages)
     *  [Header](#header)
@@ -161,6 +161,8 @@ Behind the scenes in the admin page, our superusers can use this as a place to c
 ![booking admin](/documentation/image_folders/admin_pics/booking_admin.png)
 </details>
 
+[Back to top](#totalplay)
+
 ## **User Experience**
 
 ### *Admin Users*
@@ -198,6 +200,13 @@ Using the GitHub I used the agile methods and tools to allow myself to create an
 ### *Typeography*
 
 ### *Wireframes*
+As with all projects for CI, we start with a basic Wireframe to help us undestand User wants and better UX:
+
+![Wireframe Home Page](/documentation/image_folders/wireframes/Home.png)
+![Wireframe Booking Page](/documentation/image_folders/wireframes/BookingPage.png)
+
+
+[Back to top](#totalplay)
 
 ## Future Ideas
 
@@ -231,6 +240,8 @@ After building the app, there were a couple of ideas that in the future I would 
 
   ### All notes related to testing are found [here](documentation/testing.md).
 
+[Back to top](#totalplay)
+
 ## Deployment
 
 * Go to the Heroku Dashboard. Create new apllication
@@ -259,3 +270,5 @@ Through-out this project I was inspired and helped by a number of sources, in or
 4) The base of the blog is thanks to the skeleton code of Code Institue's 'I think therefore I blog walkthrough'.
 
 * I'd also like to credit thanks to all the tutors that helped guide me through-out at Code Institue.
+
+[Back to top](#totalplay)

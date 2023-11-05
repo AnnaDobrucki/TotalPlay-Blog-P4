@@ -28,14 +28,14 @@ Through-out this project there were various bugs and error's that I had help fix
 ## Validation
 Below are all verifications of code validations. 
 
-### HTML Validation
+## HTML Validation
 
 For HTML validation I was instricted by tutors to do the following:
 1) Open page in browser.
 2) View page sorce code.
 3) Copy and paste into relevant Validator.
 
-* Home Page Validation
+### Home Page Validation
 
 <details>
 
@@ -44,7 +44,7 @@ For HTML validation I was instricted by tutors to do the following:
 ![booking admin](/documentation/image_folders/validation_html_pics/home_page_val.png)
 </details>
 
-* Sign In Validation 
+### Sign In Validation 
 
 <details>
 
@@ -53,7 +53,7 @@ For HTML validation I was instricted by tutors to do the following:
 ![booking admin](/documentation/image_folders/validation_html_pics/sign_in_val.png)
 </details>
 
-* Register
+### Register
 
 <details>
 
@@ -62,7 +62,7 @@ For HTML validation I was instricted by tutors to do the following:
 ![booking admin](/documentation/image_folders/)
 </details>
 
-* Book 1:1 Session Page
+### Book 1:1 Session Page
 
 <details>
 
@@ -71,7 +71,16 @@ For HTML validation I was instricted by tutors to do the following:
 ![booking admin](/documentation/image_folders/validation_html_pics/booking_validation.png)
 </details>
 
-* 
+### Book Edit Page 
+
+<details>
+
+<summary>Edit Page ></summary>
+
+![booking admin](/documentation/image_folders/validation_html_pics/edit_page_val.png)
+</details>
+
+## Linter PEP8 testing
 
 ### Admin.py 
 
