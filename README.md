@@ -19,9 +19,9 @@ This blog intertwines reading about whats out there but also allows people to bo
     *  [Admin](#admin)
 * [User Experience](#user-experience)
     *  [User Stories](#user-stories)
-* [Design](#design)
+* [Design](#desgin)
     *  [Colour Palette](#colour-palette)
-    *  [Typography](#typography)
+    *  [Typography](#typeography)
     *  [Wireframes](#wireframes)
 * [Future Ideas](#future-ideas)
 * [Technologies Used](#technologies-used)   
@@ -201,13 +201,15 @@ Jumping off of the colour palette from CI, I decided that oranges work well with
 
 ### *Typeography*
 
-
+In order to make the site feel more inline with fantasy gaming I made the font [Carrois Gothic SC](https://fonts.google.com/specimen/Carrois+Gothic+SC) thanks to GoogleFonts.
 
 ### *Wireframes*
 As with all projects for CI, we start with a basic Wireframe to help us undestand User wants and better UX:
 
 ![Wireframe Home Page](/documentation/image_folders/desgin.pics/wireframes/Home.png)
 ![Wireframe Booking Page](/documentation/image_folders/desgin.pics/wireframes/BookingPage.png)
+
+Used using [Balsamiq](https://balsamiq.com/wireframes/?gad_source=1&gclid=Cj0KCQjw-pyqBhDmARIsAKd9XIM_Fc5QTpYfSkV8h9BqQdUJMiqBBXFHrhSy7ZmBF08Z5WPqZsR16YQaAuNWEALw_wcB)
 
 
 [Back to top](#totalplay)
