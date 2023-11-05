@@ -14,7 +14,7 @@ body {
 }
 
 .red-o {
-    color: EB7425
+    color: #EB7425
 }
 
 .thin {
@@ -86,7 +86,7 @@ body {
     background: #2F4858;
     -webkit-transform: skew(17deg);
     -moz-transform: skew(17deg);
-    transform: skew(17eg);
+    transform: skew(17deg);
     z-index: 100;
 }
 
