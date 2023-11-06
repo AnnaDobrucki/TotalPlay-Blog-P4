@@ -4,6 +4,8 @@ Total Play is my own personal love letter(s) for TTRPG's (Table top role playing
 
 This blog intertwines reading about whats out there but also allows people to book 1:1 sessions with myself, to chat about any TTRPG's.
 
+![Home Page View](/documentation/image_folders/responsive_pics/home_page_responsive.png)
+
 You can find the link to the live site [here](https://total-play-8c6a8af18006.herokuapp.com/)
 
 ## CONTENTS
@@ -166,6 +168,15 @@ Behind the scenes in the admin page, our superusers can use this as a place to c
 [Back to top](#totalplay)
 
 ## **User Experience**
+
+Whilst creating the app it was important to consider the demographic that this site would be targeting. I looked at various other ttrpg websites. A lot seem to be very busy with mutliple features of one page, which can feel very overwhelming. However the use of bright colours and various fantasy picturs was key.
+The demographic whilst at first may seem to reach 12-18 year olds, actually reaches further to the tail end of people in there 50's. 
+Therefore this site needed to be fun and easy to use for a variety of people. So I aimed for a clean look and presentation through-out.
+
+* Content 
+    - Within the site each user should be able to access the blogs content and be able to view and see all likes and comments, regardless of having an account. 
+    - Users should be able to make a free and easy to use account for the site.
+    - Should be up to date blogs to give direct advice about what roleplaying games are out there, and what's the best to worst rated. 
 
 ### *Admin Users*
 

@@ -8,6 +8,7 @@
  * [Lighthouse Testing](#lighthouse-testing)
  * [Responsiveness](#responsiveness-testing)
 
+You can find the link to the live site [here](https://total-play-8c6a8af18006.herokuapp.com/)
 
 ## Error resolution and Debugging
 
