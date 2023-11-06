@@ -78,6 +78,15 @@ For HTML validation I was instricted by tutors to do the following:
 ![booking admin](/documentation/image_folders/validation_html_pics/edit_page_val.png)
 </details>
 
+## CSS Validation
+
+<details>
+
+<summary>CSS Validation ></summary>
+
+![booking admin](/documentation/image_folders/css_validation/css_validation.png)
+</details>
+
 ## Linter PEP8 testing
 
 ### Admin.py 

@@ -250,14 +250,25 @@ After building the app, there were a couple of ideas that in the future I would 
 
 ## Deployment
 
+1) 
 * Go to the Heroku Dashboard. Create new apllication
 * In the 'Settings' tab of your app select 'Reveal Config Vars'.
+* Add releveant Build Packs for this project e.g. Python
+* Make sure Postgres Database is attached.
 * Create/ Add 'SECRET_KEY' connecting to your django environment.
 * Create/ Add 'DATABASE_URL' connecting to your postgreSQL database.
 * Create/ Add 'ClOUDINARY_URL' connecting to cloudinary's cloud hosting service for media.
-* Link repository from GitHub to Heroku
-* Go to deploy page, select auto deployment
-* Deploy Main Branch
+2) 
+* At the top level of your repository create a ProcFile and spesify how to project will be running e.g. *web: gunicorn TotalPlay.wsgi* for this project.
+3) 
+* *Remember to change DEBUG to False in settings.py when ready to deploy live versions.*
+* Move to deployment tab above.
+* Link repository from GitHub to Heroku.
+* Go to deploy page, select auto deployment.
+* Note: Deploy Main Branch, choosing either from "Automatic Deploys" or "Deploy Branch".
+* Wait until launching is complete.
+* Click Open App.
+
 
 ## Credits
 
