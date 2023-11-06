@@ -283,6 +283,10 @@ After building the app, there were a couple of ideas that in the future I would 
 * Wait until launching is complete.
 * Click Open App.
 
+- For project submission, I went through the 'To be sure, to be sure section'. Here I was reminded to set the Repo Projects to Public as seen below.
+
+![To be Sure - Project Public](/documentation/image_folders/github_public_pic/repo_public.png)
+
 
 ## Credits
 
