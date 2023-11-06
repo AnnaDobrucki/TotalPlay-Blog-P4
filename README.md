@@ -262,6 +262,7 @@ After building the app, there were a couple of ideas that in the future I would 
 * At the top level of your repository create a ProcFile and spesify how to project will be running e.g. *web: gunicorn TotalPlay.wsgi* for this project.
 3) 
 * *Remember to change DEBUG to False in settings.py when ready to deploy live versions.*
+* *Delete DISABLE_STATIC Config Vars before live deployment.*
 * Move to deployment tab above.
 * Link repository from GitHub to Heroku.
 * Go to deploy page, select auto deployment.
