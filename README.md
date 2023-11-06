@@ -4,6 +4,8 @@ Total Play is my own personal love letter(s) for TTRPG's (Table top role playing
 
 This blog intertwines reading about whats out there but also allows people to book 1:1 sessions with myself, to chat about any TTRPG's.
 
+You can find the link to the live site [here](https://total-play-8c6a8af18006.herokuapp.com/)
+
 ## CONTENTS
 
 * [Introduction](#TotalPlay)

@@ -6,6 +6,7 @@
  * [Validation](#validation)
  * [Manual testing](#manual-testing)
  * [Lighthouse Testing](#lighthouse-testing)
+ * [Responsiveness](#responsiveness-testing)
 
 
 ## Error resolution and Debugging
@@ -27,6 +28,8 @@ Through-out this project there were various bugs and error's that I had help fix
 * Had trouble with trying to Validate the Registration Page, after multiple tries, I went to tutor help that informed me this was an AllAuth templates error issue that I wouldn't be able to fix, and to mention within the ReadMe. 
 
 * An error I was unsure of fixing was the low resolution picture on the home page. This came from the back-end admin site, allowing admins to build and post there own blogs. Should an Admin use a picture of lower resolution that is there perogative, however it did mean the performance lighthouse test wasn't in the 90's for this reason. This woukd be something I'd want to fix in future to not allow low res pictures to be uploaded on the site.
+
+* I tried to gather a responsive picture from a third party website [Am I responsive](https://amiresponsive.co.uk/), however whilst the site gave a view of the home page, it was unable to show the log in and bookings site, as the CSRF token wasn't supplued as there seemed to be an issue using a third party to issue the form. 
 
 ## Validation
 Below are all verifications of code validations. 
@@ -238,6 +241,26 @@ For HTML validation I was instricted by tutors to do the following:
 
 [Sign out Lighthouse Pic](/documentation/image_folders/Lighthouse_test_pics/sign_out_lighthouse.png)
 
+## Responsiveness Testing
+
+Thanks to bootstrap I didn't need to use any media quieries for this project. Using the inbuilt class features meant most of the responsive css was already provided. 
+
+Dev tools was my go to for understanding my sites responisveness. My site is responsive for the below:
+
+- iPhone SE
+- iPhone XR
+- iPhone 12 Pro
+- Pixel 5
+- Samsung Galaxy S8+
+- Samsung Galaxy S20 Ultra
+- iPad Air
+- iPad Mini
+- Surface Pro 7
+- Surface Duo
+- Samsung Galaxy A51
+- Nest Hub Max
+
+[Back to README](/README.md)
 
 
 
